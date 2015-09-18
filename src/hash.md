@@ -82,5 +82,5 @@
 
 ## 練習問題
 - 次のような挙動をするプログラムを`hash_profile.pl`という名前で作成しましょう.
-1. 自分の名前 (name)、性別 (sex)、好きな食べ物 (food) を key にしたハッシュを作ってみましょう。
-2. key である `name`, `sex`, `food` を用いて、それぞれの value をprintしてみましょう。
+1. 自分の名前 (name)、年齢 (age)、好きな食べ物 (food) を key にしたハッシュを作ってみましょう。
+2. key である `name`, `age`, `food` を用いて、それぞれの value をprintしてみましょう。
