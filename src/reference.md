@@ -8,28 +8,28 @@
 例えば、リファレンスを使うとハッシュの中にハッシュを格納し、更にそのハッシュにハッシュを格納する……といった複雑なデータ構造を表現できます。
 
 ## 具体例 (1/3)
-         |     0    |     1    |
-    -----+----------+----------+
-      0  |  nqounet | boolfool |
-    -----+----------+----------+
-      1  |  macopy  |  papix   |
-    -----+----------+----------+
+         |     0     |     1     |
+    -----+-----------+-----------+
+      0  |  maguro   |   katsuo  |
+    -----+-----------+-----------+
+      1  |    tai    |   hirame  |
+    -----+-----------+-----------+
 
 テーブルのようなデータ構造を表現したいとき
 
 ## 具体例 (2/3)
-    my @osaka = ('nqounet', 'boolfool');
-    my @tokyo = ('macopy', 'papix');
-    my @perl_entrance = (@osaka, @tokyo);
-    print $perl_entrance[1][1]; # => これはエラーになる
+    my @akami = ('maguro', 'katsuo');
+    my @shiromi = ('tai', 'hirame');
+    my @sushi = (@akami, @shiromi);
+    print $sushi[1][1]; # => これはエラーになる
 
 今までの知識であれば、配列を用いて<b>行</b>単位の表現はできますが、`n 行 m 列目は papix` という様に表現したいですね。
 
 ## 具体例 (3/3)
-    my $osaka = ['nqounet', 'boolfool'];
-    my $tokyo = ['macopy', 'papix'];
-    my @perl_entrance = ($osaka, $tokyo);
-    print $perl_entrance[1][1]; # => papix
+    my $akami = ['maguro', 'katsuo'];
+    my $shiromi = ['tai', 'hirame'];
+    my @sushi = ($akami, $shiromi);
+    print $sushi[1][1]; # => hirame
 
 <b>リファレンス</b> を用いることで、このように複雑なデータ構造を表現することが容易になります。
 
